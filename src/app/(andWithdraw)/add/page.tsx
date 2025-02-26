@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image";
+import Image from "next/image"
 import { Geologica } from "next/font/google";
 import { useState } from "react";
 import BlackResponse from "@/components/details/BlackResponse";
@@ -46,13 +46,13 @@ const page = () => {
 
             </div>
 
-            <button className={`flex gap-2 w-[364px] h-[43px] pt-3 pr-6 pb-3 pl-6 rounded-[12px] ${isInputActive ? 'bg-blue-500' : 'bg-[#444444]' }`}
+            <button
+                className={`flex gap-2 w-[364px] h-[43px] pt-3 pr-6 pb-3 pl-6 rounded-[12px] ${isInputActive ? 'bg-blue-500' : 'bg-[#444444]'
+                    }`}
             >
-                <h1 className={`m-auto ${geologica.className}  font-normal text-[16px] leading-[19.2px] tracking-normal text-center`}>Submit</h1>
-            </button>
-
+            <h1 className={`m-auto ${geologica.className}  font-normal text-[16px] leading-[19.2px] tracking-normal text-center`}>Submit</h1>
+        </button>
         </div >
-
     )
 }
 

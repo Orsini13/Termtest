@@ -34,8 +34,7 @@ const DownNav = () => {
                     const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`);
                     return (
                         <a href={item.route} key={item.id} >
-                            <Image src={item.imgURL} alt='Home' width={24} height={24} className={cn({ 'text-blue-800 ': isActive
-                            })} />
+                            <Image src={item.imgURL} alt='Home' width={24} height={24} />
                         </a>
                     )
                 })
