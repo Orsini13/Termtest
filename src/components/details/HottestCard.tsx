@@ -13,12 +13,12 @@ const HottestCard = () => {
     ];
 
     return (
-        <section className="flex flex-row gap-[12px] hide-scrollbar overflow-x-auto md:w-[330px]">
+        <section className="flex flex-row gap-[12px] hide-scrollbar overflow-x-auto  rounded-xl">
 
             {
                 hottestCards.map((card, index) => (
-                    <div key={index} className="p-[6px] gap-[6px] rounded-[12px] bg-[#ebebeb] flex flex-col md:w-[112px] md:h-[217px] hide-overflow md:justify-between">
-                        <div className="rounded-[12px] gap-[6px] flex flex-col w-[170px] md:w-[100px] md:h-[137px] md:justify-between">
+                    <div key={index} className="p-[6px] gap-[6px] rounded-[12px] bg-[#ebebeb] flex flex-col md:w-[112px] md:h-[200px] hide-overflow md:justify-between">
+                        <div className="rounded-[12px] gap-[6px] flex flex-col w-[170px] md:w-[100px] md:h-[137px] ">
                             <Image src={card.imgURL} alt='prev' width={170} height={95.38} />
                             <div className=" flex flex-col  gap-[6px]">
                                 <h1 className={`${geologica.className} truncate font-medium text-[20px] leading-[20px] tracking-[0%]`}>

@@ -19,7 +19,7 @@ const page = () => {
   }
 
   return (
-    <div className="relative h-full gap-[24px] overflow-auto hide-scrollbar flex flex-col mb-[200px]">
+    <div className="relative h-full gap-[24px] overflow-auto hide-scrollbar flex flex-col mb-[200px] px-4 sm:px-14 md:px-0">
       <div className="flex flex-row justify-between md:hidden">
         <div className='flex flex-row [36px] gap-[12px]'>
           <Image src="/SearchFrame.svg" alt='prev' width={36} height={36} />
@@ -31,9 +31,9 @@ const page = () => {
       <h1 className={`${instrumentSerif.className} font-bold text-[36px] leading-[36px] tracking-[0%]  md:hidden`}>Gm mate </h1>
 
       {/* add&withdarw */}
-      <div className="gap-[24px] flex flex-col md:flex-row ">
+      <div className="gap-[24px] flex flex-col md:flex-row lg:justify-between ">
 
-        <div className='flex flex-col md:max-w-[350px] gap-[12px]'>
+        <div className='flex flex-col md:max-w-[350px] gap-[12px] md:min-w-[322px] md:justify-between md:gap-1 xl:min-w-[480px]'>
           <div className="flex flex-col bg-[#ebebeb] p-3 gap-[36px] sm:gap-16 rounded-[24px]">
             <div className='  gap-[4px] flex flex-col'>
               <div className="flex flex-row justify-between">
@@ -56,16 +56,16 @@ const page = () => {
             </div>
           </div>
 
-          <div className="flex flex-row justify-between gap-[12px]">
+          <div className="flex flex-row justify-between gap-[8px]">
             <Link href='/add'>
-              <button title='Add' className="items-center justify-center flex flex-row p-[12px] px-12 md:px-8 gap-[10px] bg-[#ebebeb] rounded-xl">
+              <button title='Add' className="items-center justify-center flex flex-row py-[12px] px-10 sm:px-20 md:px-10 gap-2 bg-[#ebebeb] rounded-xl flex-1">
                 <Image src="/Add.svg" alt='Add' width={24} height={24} />
                 <h1 className={`${geologica.className} my-auto font-normal text-[20px] leading-[20px] tracking-[0%] text-center text-black`}>Add</h1>
               </button>
             </Link>
 
             <Link href='/withdraw'>
-              <button title='Withdraw' className="items-center justify-center flex flex-row p-[12px] px-12 md:px-8 gap-[10px] bg-[#ebebeb] rounded-xl">
+              <button title='Withdraw' className="items-center justify-center flex flex-row py-[12px] px-8 sm:px-16 md:px-8 gap-2 bg-[#ebebeb] rounded-xl flex-1">
                 <Image src="/Withdraw.svg" alt='Withdraw' width={24} height={24} />
                 <h1 className={`${geologica.className} my-auto font-normal text-[20px] leading-[20px] tracking-[0%] text-center text-black`}>Withdraw</h1>
               </button>
@@ -76,7 +76,7 @@ const page = () => {
         </div>
 
         {/* hottest daily */}
-        <div className="flex flex-col gap-[6px]">
+        <div className="flex flex-col gap-[6px] md:min-w-[322px]  xl:min-w-[480px]">
           <div className='flex flex-row'>
             <h1 className={`font-normal text-[15px] leading-[15px] tracking-[0%] text-center ${instrumentSerif.className}`}>Hottest Daily</h1>
             <Image src="/bolt.svg" alt='hot' width={12} height={12} />
@@ -87,7 +87,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="gap-[24px] flex flex-col md:flex-row ">
+      <div className="gap-[24px] flex flex-col md:flex-row md:items-center md:justify-between md:gap-1">
 
       <HotRecent />
       <HotList />
