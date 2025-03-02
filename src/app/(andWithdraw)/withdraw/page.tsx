@@ -8,7 +8,7 @@ const geologica = Geologica({ weight: ["300", "400", "500", "600"], subsets: ["l
 
 const page = () => {
     const [isAccount, setIsAccount] = useState(true);
-    const [notAccount, setNotAccount] = useState(false);
+    const [notAccount, setNotAccount] = useState(true);
     const [isInputActive, setIsInputActive] = useState(false);
     const [response, setResponse] = useState(false);
     const [blackResponse, redResponse] = useState(true);
@@ -17,7 +17,7 @@ const page = () => {
         { name: "Access Bank" }, { name: "First Bank" }, { name: "GT Bank" }, { name: "Zenith Bank" }, { name: "UBA" }
     ]
     return (
-        <div className="flex flex-col rounded-[24px] gap-3">
+        <div className="flex flex-col rounded-[24px] gap-3 md:w-[500px]">
             <input type="number" name="Account Number" id="acct" title="Enter account number" placeholder="10 digit account number" className={` p-[10px]  ${geologica.className} font-normal text-[16px] leading-[16px] tracking-[0%] border-[0.4px] border-solid  rounded-lg`} />
             <div className={`flex flex-col rounded-lg ${!isAccount ? 'bg-black' : !notAccount ? 'bg-[#ffcbcb]' : null}`}>
                 <input type="number" name="Bank name" id="acct" title="Enter bank name" placeholder="10 digit account number" className={`p-[10px] ${geologica.className} font-normal text-[16px] leading-[16px] tracking-[0%] border-[0.4px] border-solid  rounded-lg ${!isAccount ? 'border-black' : !notAccount ? 'border-[#ffcbcb]' : null}`} />
@@ -53,7 +53,7 @@ const page = () => {
                                 onBlur={() => setIsInputActive(false)}></input>
                         </div>
 
-                        <div className=" border-[0.4px] border-solid border-[#444444] opacity-50 rounded-lg"></div>
+                        <div className=" border-[0.4px] border-solid border-[#444444] opacity-50 rounded-lg md:w-[450px]"></div>
 
                         <div className="flex flex-col gap-1 ">
                             <label htmlFor="amount" className={`${geologica.className} font-normal text-[10px] leading-[10px] tracking-[0%]`}>USDC</label>
@@ -86,7 +86,7 @@ const page = () => {
 
                         <div className="flex flex-row  px-6 py-3 gap-[4px] m-auto">
                             <Image src="/circleDetaill.svg" alt='warning' width={12} height={12} />
-                            <h1 className={`${geologica.className} font-medium text-[8px] leading-[8px] my-auto tracking-[0%] text-center text-[#AC1717]`}>Not in our registry</h1>
+                            <h1 className={`${geologica.className} font-medium text-[8px] leading-[8px] my-auto tracking-[0%] text-center text-[#AC1717]`}>account not found</h1>
                         </div>
 
                     </div>

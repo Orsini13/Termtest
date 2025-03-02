@@ -18,7 +18,7 @@ export default async function RootLayout({
       </div>
       </Link>
 
-      <div className="flex flex-col items-center justify-between gap-12 py-10 " >
+      <div className="flex flex-col items-center justify-between gap-12 py-10 md:py-28 " >
         {children}
 
         <div className="flex flex-row mx-auto ">
