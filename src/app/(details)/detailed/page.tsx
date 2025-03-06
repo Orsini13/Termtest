@@ -11,7 +11,7 @@ const geologica = Geologica({ weight: ["300", "400", "500", "600"], subsets: ["l
 const page = () => {
 
     return (
-        <div className="items-center justify-center p-[24px] sm:px-20 md:px-10  lg:px-36 xl:px-[360px] 2xl:px-90 ">
+        <div className="items-center justify-center p-[12px]  md:px-14 xl:px-48">
             <div className="flex flex-col gap-[24px] ">
 
                 <div className="flex flex-row h-[36px] justify-between">
@@ -34,54 +34,58 @@ const page = () => {
 
                 <div className="flex flex-col gap-[12px]">
                     {/* dexgraph */}
-                    <div className="p-[1/1] h-[171px] bg-[#EBEBEB] ">
+                    <div className="p-[1/1] h-[171px] md:h-[303px] bg-[#EBEBEB] ">
 
                     </div>
+                    <div className="flex flex-col gap-[12px] md:flex-row md:justify-between">
 
-                    <h1 className={`${geologica.className} font-medium text-[20px] leading-[20px] tracking-[0%]`}>First Crypto President</h1>
-                    <h1 className={`${geologica.className} font-normal text-[16px] leading-[16px] tracking-[0%] opacity-50`}>$FCP</h1>
-
-                    <div className="flex flex-row gap-[6px] ">
-                        <div className="py-[12px] pl-[8px] items-start rounded-xl h-[36px]  flex-1 bg-[#EBEBEB]">
-                            <h1 className={`${geologica.className} font-normal text-[12px] leading-[12px] tracking-[0%]`}>Raydium V1 - From Contract</h1>
+                        <div className="flex flex-col gap-[12px]">
+                            <h1 className={`${geologica.className} font-medium text-[20px] leading-[20px] tracking-[0%]`}>First Crypto President</h1>
+                            <h1 className={`${geologica.className} font-normal text-[16px] leading-[16px] tracking-[0%] opacity-50`}>$FCP</h1>
                         </div>
-                        <Image src="/globeFrame.svg" alt='internet' width={24} height={24} className=" p-[6px] bg-[#EBEBEB] rounded-xl" />
-                        <Image src="/sendFrame.svg" alt='send' width={24} height={24} className=" p-[6px] bg-[#EBEBEB] rounded-xl" />
-                        <Image src="/twitterFrame.svg" alt='twitter' width={24} height={24} className=" p-[6px] bg-[#EBEBEB] rounded-xl" />
+                        <div className="flex flex-row gap-[6px] md:gap-[18px]">
+                            <div className="px-[12px] py-[6px] items-start rounded-xl bg-[#EBEBEB] md:my-auto md:py-3 md:w-[395px]">
+                                <h1 className={`${geologica.className} font-medium text-[12px] leading-[12px] tracking-[0%] md:text-[16px]`}>Raydium V1 - From Contract</h1>
+                            </div>
+                            <Image src="/globeFrame.svg" alt='internet' width={24} height={24} className="p-[6px] bg-[#EBEBEB] rounded-xl md:w-[48px] md:h-[48px]" />
+                            <Image src="/sendFrame.svg" alt='send' width={24} height={24} className="p-[6px] bg-[#EBEBEB] rounded-xl md:w-[48px] md:h-[48px]"/>
+                            <Image src="/twitterFrame.svg" alt='twitter' width={24} height={24} className=" p-[6px] bg-[#EBEBEB] rounded-xl md:w-[48px] md:h-[48px]"/>
 
+                        </div>
                     </div>
-
-                    <div className="flex flex-col gap-[24px] md:flex-row md:gap-[18px] md:justify-between">
-                        <div className=" flex flex-col h-[106px]  p-[12px] gap-[24px] bg-[#ebebeb] md:p-[18px]">
+                    <div className="flex flex-col gap-[24px] md:flex-row md:gap-[1px] md:justify-between rounded-[18px]">
+                        
+                        <div className=" flex flex-col p-[12px] gap-[24px] bg-[#ebebeb] md:p-[18px] rounded-[18px]">
                             <div className=" h-[38px] gap-[4px] flex flex-col">
                                 <h1 className={`${geologica.className} font-normal text-[24px] leading-[24px] tracking-[0%]`}>$1.98</h1>
                                 <h1 className={`${geologica.className} font-normal text-[10px] leading-[10px] tracking-[0%] text-green-500`}>+20%</h1>
                             </div>
-                            <div className="flex flex-row  gap-[18px]">
-                                <div className="flex flex-row  h-[20px] gap-[3px]">
-                                    <div className=" bg-black p-[4px] rounded-[6px]">
-                                        <h1 className={`${geologica.className} font-normal text-[12px] leading-[12px] tracking-[0%] text-white`}>MCAP</h1>
+                            <div className="flex flex-row gap-[18px]  md:gap-9">
+                                <div className="flex flex-row  gap-[3px]">
+                                    <div className=" bg-black p-1 rounded-[6px]">
+                                        {/* text-[20px] font-normal md;leading-[1] uppercase tracking-[0] align-middle */}
+                                        <h1 className={`${geologica.className} font-normal text-[12px] lg:text-[20px] leading-[12px] lg:leading-[1] tracking-[0%] text-white`}>MCAP</h1>
                                     </div>
                                     <div className=" p-[2px] rounded-[6px]">
-                                        <h1 className={`${geologica.className} font-normal text-[16px] leading-[16px] tracking-[0%]`}>175k</h1>
+                                        <h1 className={`${geologica.className} font-normal text-[16px] lg:text-[24px] lg:leading-[1] leading-[16px] tracking-[0%]`}>175k</h1>
                                     </div>
 
                                 </div>
-                                <div className="flex flex-row  h-[20px] gap-[3px]">
+                                <div className="flex flex-row gap-[3px]">
                                     <div className=" bg-black p-[4px] rounded-[6px]">
-                                        <h1 className={`${geologica.className} font-normal text-[12px] leading-[12px] tracking-[0%] text-white`}>SUP</h1>
+                                        <h1 className={`${geologica.className} font-normal text-[12px] lg:text-[20px] leading-[12px] lg:leading-[1] tracking-[0%] text-white`}>SUP</h1>
                                     </div>
                                     <div className=" p-[2px] rounded-[6px]">
-                                        <h1 className={`${geologica.className} font-normal text-[16px] leading-[16px] tracking-[0%]`}>1B</h1>
+                                        <h1 className={`${geologica.className} font-normal text-[16px] lg:text-[24px] lg:leading-[1] leading-[16px] tracking-[0%]`}>1B</h1>
                                     </div>
 
                                 </div>
-                                <div className="flex flex-row  h-[20px] gap-[3px]">
+                                <div className="flex flex-row gap-[3px]">
                                     <div className=" bg-black p-[4px] rounded-[6px]">
-                                        <h1 className={`${geologica.className} font-normal text-[12px] leading-[12px] tracking-[0%] text-white`}>LIQ</h1>
+                                        <h1 className={`${geologica.className} font-normal text-[12px] lg:text-[20px] leading-[12px] lg:leading-[1] tracking-[0%] text-white`}>LIQ</h1>
                                     </div>
                                     <div className=" p-[2px] rounded-[6px]">
-                                        <h1 className={`${geologica.className} font-normal text-[16px] leading-[16px] tracking-[0%]`}>51k</h1>
+                                        <h1 className={`${geologica.className} font-normal text-[16px] lg:text-[24px] lg:leading-[1] leading-[16px] tracking-[0%]`}>51k</h1>
                                     </div>
 
                                 </div>
@@ -90,7 +94,7 @@ const page = () => {
                         </div>
 
                         <BuySellSet />
-                         <SlippageSettings /> 
+                        <SlippageSettings />
                     </div>
                     <VolMarkers />
 
