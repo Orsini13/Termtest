@@ -57,6 +57,7 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       screens: {
+        ssm: '500px', // Custom extra md screen
         mdd: '835px', // Custom extra md screen
         mddd: '900px', // Custom extra md screen
         lgg: '1070px', // Custom extra large screen

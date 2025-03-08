@@ -42,8 +42,8 @@ const page = () => {
         <div className="flex flex-col gap-3  h-[191px] rounded-[24px] md:w-[500px] sm:w-[400px] ">
             <div className="flex flex-row justify-between p-2 rounded-[12px] border-[1px] border-solid">
                 <input
-                    value=""
-                    id="Solana address" className={` ${geologica.className} font-normal text-[16px] leading-1 tracking-normal outline-none`} placeholder="paste a Solana wallet address" title="Enter amount">
+                    
+                    id="Solana address" className={` ${geologica.className} font-normal text-[16px] leading-1 tracking-normal outline-none`} placeholder="Paste a Solana wallet address" title="Enter amount">
                 </input>
                 <Image src="/AddressCopy.svg" alt='Home' width={20} height={20} className="my-auto" />
 
