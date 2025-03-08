@@ -14,7 +14,7 @@ const SlippageSettings = () => {
                   <div className="p-1 bg-black rounded-[6px]"><h1 className={`${geologica.className} text-white font-normal text-[12px] leading-[12px] lg:leading-[1] tracking-[0%]`}>20X</h1> </div>
 
                   
-                  <div className="p-1 bg-white w-[92px]"><h1 className={`${geologica.className} text-[#ebebeb] font-normal text-[12px] leading-[12px] tracking-[0%]`}>CUSTOM</h1>
+                  <div className="p-1 bg-white w-[92px] xl:w-[108px]"><h1 className={`${geologica.className} text-[#ebebeb] font-normal text-[12px] leading-[12px] tracking-[0%]`}>CUSTOM</h1>
                   </div>
               </div>
           </div>
@@ -29,7 +29,7 @@ const SlippageSettings = () => {
                   <div className="p-1 bg-black rounded-[6px]"><h1 className={`${geologica.className} text-white font-normal text-[12px] leading-[12px] lg:leading-[1] tracking-[0%]`}>20X</h1> </div>
 
 
-                  <div className="p-1 bg-white flex-1"><h1 className={`${geologica.className} text-[#ebebeb] font-normal text-[12px] leading-[12px] tracking-[0%]`}>CUSTOM</h1>
+                  <div className="p-1 bg-white flex-1 w-[92px] xl:w-[108px]"><h1 className={`${geologica.className} text-[#ebebeb] font-normal text-[12px] leading-[12px] tracking-[0%]`}>CUSTOM</h1>
                   </div>
               </div>
           </div>

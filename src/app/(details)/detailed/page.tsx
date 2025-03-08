@@ -12,7 +12,7 @@ const page = () => {
 
     return (
         <div className="items-center relative justify-center p-5 ssm:px-8 sm:px-16  md:px-4 mdd:px-8 mddd:px-16 lgg:px-28 xl:px-[210px] 2xl:px-[450px]">
-            <div className="flex flex-col gap-[24px] mx-auto md:max-w-[719px] mdd:max-w-[750px] lg:max-w-[852px]">
+            <div className="flex flex-col gap-[24px] mx-auto md:max-w-[719px] mdd:max-w-[750px] lg:max-w-[852px] xl:max-w-[910px] 2xl:max-w-[1000px]">
 
                 <div className="flex flex-row h-[36px] justify-between">
                     <Image src="/prevCarret.svg" alt='prev' width={36} height={36} />
