@@ -11,8 +11,8 @@ const geologica = Geologica({ weight: ["300", "400", "500", "600"], subsets: ["l
 const page = () => {
 
     return (
-        <div className="items-center relative justify-center p-5 ssm:px-8 sm:px-16  md:px-4 mdd:px-8 mddd:px-16 lgg:px-28 xl:px-[210px] 2xl:px-[450px]">
-            <div className="flex flex-col gap-[24px] mx-auto md:max-w-[719px] mdd:max-w-[750px] lg:max-w-[852px] xl:max-w-[910px] 2xl:max-w-[1000px]">
+        <div className="items-center relative justify-center p-4 ssm:px-8 sm:px-16  md:px-4 mdd:px-8 mddd:px-16 lgg:px-28 ">
+            <div className="flex flex-col gap-[24px] mx-auto md:max-w-[730px] mdd:max-w-[750px] lg:max-w-[852px] xl:max-w-[940px] 2xl:max-w-[1000px]">
 
                 <div className="flex flex-row h-[36px] justify-between">
                     <Image src="/prevCarret.svg" alt='prev' width={36} height={36} />
@@ -43,8 +43,8 @@ const page = () => {
                             <h1 className={`${geologica.className} font-medium text-[20px] leading-[20px] tracking-[0%]`}>First Crypto President</h1>
                             <h1 className={`${geologica.className} font-normal text-[16px] leading-[16px] tracking-[0%] opacity-50`}>$FCP</h1>
                         </div>
-                        <div className="flex flex-row gap-[6px] md:gap-[18px] justify-between">
-                            <div className="px-[12px] flex-1 py-[6px] items-start rounded-xl bg-[#EBEBEB] md:my-auto md:py-3 lg:w-[395px]">
+                        <div className="flex flex-row gap-[6px] md:gap-[6px] justify-between">
+                            <div className="px-[12px] flex-1 py-[6px] items-start rounded-xl bg-[#EBEBEB] md:my-auto md:py-3 md:w-[345px] lg:w-[395px] xl:">
                                 <h1 className={`${geologica.className} font-medium text-[12px] leading-[12px] tracking-[0%] md:text-[16px]`}>Raydium V1 - From Contract</h1>
                             </div>
                             <Image src="/globeFrame.svg" alt='internet' width={24} height={24} className="p-[6px] bg-[#EBEBEB] rounded-xl md:w-[48px] md:h-[48px]" />
@@ -60,9 +60,9 @@ const page = () => {
                                 <h1 className={`${geologica.className} font-normal text-[24px] leading-[24px] lg:leading-[1] lg:text-[32px] tracking-[0%]`}>$1.98</h1>
                                 <h1 className={`${geologica.className} font-normal text-[10px] leading-[10px] tracking-[0%] text-green-500`}>+20%</h1>
                             </div>
-                            <div className="flex flex-row gap-[18px]  md:gap-9">
+                            <div className="flex flex-row gap-[18px] md:gap-9">
 
-                                <div className="flex flex-row  gap-[3px]">
+                                <div className="flex flex-row gap-[3px]">
                                     <div className=" bg-black p-1 rounded-[6px]">
                                         {/* text-[20px] font-normal md;leading-[1] uppercase tracking-[0] align-middle */}
                                         <h1 className={`${geologica.className} font-normal text-[12px] lg:text-[20px] leading-[12px] lg:leading-[1] tracking-[0%] text-white`}>MCAP</h1>
