@@ -12,7 +12,7 @@ const page = () => {
 
     return (
         <div className="items-center relative justify-center p-4 ssm:px-8 sm:px-16  md:px-4 mdd:px-8 mddd:px-16 lgg:px-28 ">
-            <div className="flex flex-col gap-[24px] mx-auto md:max-w-[730px] mdd:max-w-[750px] lg:max-w-[852px] xl:max-w-[940px] 2xl:max-w-[1000px]">
+            <div className="flex flex-col gap-[24px] mx-auto md:max-w-[730px] mdd:max-w-[750px] lg:max-w-[852px] xl:max-w-[920px] 2xl:max-w-[980px]">
 
                 <div className="flex flex-row h-[36px] justify-between">
                     <Image src="/prevCarret.svg" alt='prev' width={36} height={36} />
@@ -53,7 +53,7 @@ const page = () => {
 
                         </div>
                     </div>
-                    <div className="flex flex-col gap-[24px] md:flex-row md:gap-[4px] md:justify-between rounded-[18px]">
+                    <div className="flex flex-col md:flex-row gap-[24px] md:gap-[4px] md:justify-between rounded-[18px]">
                         
                         <div className=" flex flex-col p-[12px] gap-[24px] bg-[#ebebeb] lg:p-[18px] rounded-[18px]">
                             <div className=" h-[38px] gap-[4px] flex flex-col">
