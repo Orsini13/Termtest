@@ -38,7 +38,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className='py-12 px-9 md:px-5 bg-[#ebebeb] flex flex-col  rounded-[36px] items-center xl:items-start gap-12 pb-60 xl:pr-12'>
+    <div className='py-12 md:px-2 bg-[#ebebeb] flex flex-col  rounded-[36px] items-center xl:items-start gap-12 pb-60 xl:pr-12 mx-auto'>
       <Image src="/Terminapng.png" alt='Home' width={60} height={60} className="xl:hidden mx-auto " />
       <Image src="/Termina-logo.png" alt='Home' width={100} height={60} className="hidden xl:block xl:mx-auto" />
 

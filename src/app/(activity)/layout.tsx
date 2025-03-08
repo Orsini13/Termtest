@@ -9,9 +9,9 @@ export default async function RootLayout({
 
 
   return (
-    <main className=" overflow-auto hide-scrollbar relative h-screen px-[24px] py-6 lg:py-12 lg:pl-20 md:px-5 lg:px-30 xl:px-38 2xl:ml-48">
+    <main className=" overflow-auto items-center justify-center hide-scrollbar relative h-screen p-4 lg:py-12 lg:pl-20 md:px-5 lg:px-30 xl:px-38">
       
-      <div className="md:flex md:flex-row md:gap-4 mx-auto ">
+      <div className="md:flex md:flex-row md:gap-3 mx-auto ">
           <div className='hidden md:block '>
             <Sidebar />
           </div>
