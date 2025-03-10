@@ -15,7 +15,7 @@ const SwapSlippage = () => {
     };
 
   return (
-      <div className="hidden md:block">
+      <section className="hidden md:block">
 
       <div className="flex flex-col gap-12 px-12 md:px-2 xl:px-12 py-9 bg-[#ebebeb] rounded-[36px] pmd:w-[412px] ">
           <div className="flex flex-col gap-3 mx-auto">
@@ -41,7 +41,7 @@ const SwapSlippage = () => {
 
           </div>
       </div>
-      </div>
+      </section>
   )
 }
 

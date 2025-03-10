@@ -13,7 +13,7 @@ const Sidebar = () => {
   ];
 
   return (
-      <div className='hidden mx-auto md:py-12 md:px-7 pmd:px-9 lgg:p-8 xl:pr-16 bg-[#ebebeb] md:flex md:flex-col rounded-[36px] items-center xl:items-start  gap-12 h-[608px]'>
+      <nav className='hidden mx-auto md:py-12 md:px-7 pmd:px-9 lgg:p-8 xl:pr-16 bg-[#ebebeb] md:flex md:flex-col rounded-[36px] items-center xl:items-start  gap-12 h-screen'>
       <Image src="/Terminapng.png" alt='Home' width={60} height={60} className="xl:hidden" />
       <Image src="/Termina-logo.png" alt='Home' width={100} height={60} className="hidden xl:block" /> 
 
@@ -24,13 +24,13 @@ const Sidebar = () => {
               <a href={item.route} key={item.id} className="  ">
                 <div className="flex flex-row gap-3  justify-between">
                   <Image src={item.imgURL} alt='Home' width={28} height={28} />
-                  <h1 className="hidden xl:block">{item.name}</h1>
+                <h1 className={`hidden xl:block`}> {item.name}</h1>
                 </div>
               </a>
           )
         })
       }
-      </div>
+      </nav>
   )
 }
 

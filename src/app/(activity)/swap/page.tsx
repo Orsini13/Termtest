@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Geologica, Instrument_Serif } from "next/font/google";
 import SwapSlippage from "@/components/details/SwapSlippage";
 import { useState } from "react";
+import Sidebar from "@/components/details/Sidebar";
+import DownNav from "@/components/details/DownNav";
 const geologica = Geologica({ weight: ["300", "400", "500", "600"], subsets: ["latin"] });
 const instrumentSerif = Instrument_Serif({ weight: "400", subsets: ["latin"] });
 
@@ -36,8 +38,14 @@ const page = () => {
         // setDollar("");
     };
     return (
+    <main className="overflow-auto hide-scrollbar relative h-screen p-4 md:px-2 pmd:p-12 pxl:px-18">
+      
+      <div className="md:flex md:flex-row md:gap-3 lgg:gap-4 pmd:gap-6  pmd:min-w-[904px] pxl:max-w-[1300px] md:px-2 mdd:px-9 pmd:px-0 xl:px-0 pxl:gap-6 mx-auto ">
+            <Sidebar />
+        
+
         <section className="md:flex md:flex-row md:gap-4 pxl:gap-6 mx-auto">
-            <div className="gap-4 flex flex-col lgg:w-[444px] pxl:w-[604px] ">
+            <section className="gap-4 flex flex-col lgg:w-[444px] pxl:w-[604px] ">
                 <div className="flex flex-row  h-[36px] justify-between md:hidden">
                     <Image
                         src="/prevCarret.svg"
@@ -55,9 +63,9 @@ const page = () => {
                 </div>
 
                 {/* solanabox */}
-                <div className="flex flex-col gap-[6px] rounded-[12px] border-[3px] bg-[#ebebeb] border-[#ebebeb]  md:w-[320px] lgg:w-[444px] pxl:w-[608px]">
+                <section className="flex flex-col gap-[6px] rounded-[12px] px-[2px] bg-[#ebebeb] border-[#ebebeb]  md:w-[320px] lgg:w-[444px] pxl:w-[604px]">
                     {/* $$ */}
-                    <div className="flex flex-col p-[10px] gap-4 rounded-[12px] bg-white border-[1px] border-[#ebebeb]  pxl:w-[602px]">
+                    <div className="flex flex-col p-[10px] gap-4 rounded-[12px] bg-white   pxl:w-[600px]">
                         {/* solana */}
                         <div className="flex flex-row h-[48px] p-[6px] gap-[10px] justify-between my-auto">
                             <div className="flex flex-row h-[48px] gap-[10px]">
@@ -87,7 +95,7 @@ const page = () => {
                                 </div>
                             </div>
                             <input
-                                id="" className={`${instrumentSerif.className} w-[130px] md:w-[70px] font-normal text-4xl leading-none tracking-normal text-right outline-none`} placeholder="" title="Enter amount" value={isNairaFirst ? dollar : naira} onChange={isNairaFirst ? handleDollarChange : handleNairaChange} />
+                                id="" className={`${instrumentSerif.className} w-[130px] md:w-[70px] lgg:w-[130px] font-normal text-4xl leading-none tracking-normal text-right outline-none`} placeholder="" title="Enter amount" value={isNairaFirst ? dollar : naira} onChange={isNairaFirst ? handleDollarChange : handleNairaChange} />
 
                         </div>
                     </div>
@@ -106,7 +114,7 @@ const page = () => {
                         </div>
                     </div>
 
-                </div>
+                </section>
 
                 {/* confirm button  */}
                 <button className=" h-[55px] gap-[10px] rounded-[12px] pt-[18px] pr-[24px] pb-[18px] pl-[24px] bg-[#0077FF]" title="Confirm Swap">
@@ -125,11 +133,14 @@ const page = () => {
 
 
 
-            </div>
+            </section>
 
             <SwapSlippage />
 
         </section>
+        </div>
+        <DownNav/>
+        </main>
     )
 }
 

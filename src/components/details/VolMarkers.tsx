@@ -4,7 +4,7 @@ const geologica = Geologica({ weight: ["300", "400", "500", "600"], subsets: ["l
 
 const VolMarkers = () => {
   return (
-      <section className="flex flex-col h-[201px] rounded-lg p-[12px] gap-[12px] bg-[#ebebeb]">
+      <section className="flex flex-col justify-between h-[201px] rounded-lg p-[12px] gap-[12px] bg-[#ebebeb]">
 
           <div className="flex flex-row h-[51px] gap-[12px] items-center rounded-lg ">
               <div className=" h-[51px] p-[12px] bg-white gap-[3px] rounded-lg">
