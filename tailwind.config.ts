@@ -60,7 +60,9 @@ export default {
         ssm: '500px', // Custom extra md screen
         mdd: '835px', // Custom extra md screen
         mddd: '900px', // Custom extra md screen
+        pmd: '999px', // Custom extra md screen
         lgg: '1070px', // Custom extra large screen
+        pxl: '1330px', // Custom extra large screen
       },
     },
   },

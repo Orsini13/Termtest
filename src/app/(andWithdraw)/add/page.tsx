@@ -41,14 +41,13 @@ const page = () => {
     return (
         <div className="flex flex-col gap-3  h-[191px] rounded-[24px] md:w-[500px] sm:w-[400px] ">
             <div className="flex flex-row justify-between p-2 rounded-[12px] border-[1px] border-solid">
-                <input
-                    
+                <input 
                     id="Solana address" className={` ${geologica.className} font-normal text-[16px] leading-1 tracking-normal outline-none`} placeholder="Paste a Solana wallet address" title="Enter amount">
                 </input>
                 <Image src="/AddressCopy.svg" alt='Home' width={20} height={20} className="my-auto" />
 
             </div>
-            <div className={` h-[136px] rounded-[12px] ${response ? blackResponse ? 'bg-black' : 'bg-[#ffcbcb]' : null}`}>
+            <div className={`h-[136px] rounded-[12px] ${response ? blackResponse ? 'bg-black' : 'bg-[#ffcbcb]' : null}`}>
 
                 <div className={`flex flex-row gap-3 justify-between h-[104px] bg-white p-3 border-[1px] border-solid rounded-[12px] ${response ? blackResponse ? 'border-black' : 'border-[#ffcbcb]' : null} `}>
 
