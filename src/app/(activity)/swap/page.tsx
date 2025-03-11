@@ -40,7 +40,7 @@ const page = () => {
     return (
     <main className="overflow-auto hide-scrollbar relative h-screen p-4 md:px-2 pmd:p-12 pxl:px-18">
       
-      <div className="md:flex md:flex-row md:gap-3 lgg:gap-4 pmd:gap-6  pmd:min-w-[904px] pxl:max-w-[1300px] md:px-2 mdd:px-9 pmd:px-0 xl:px-0 pxl:gap-6 mx-auto ">
+      <div className="md:flex md:flex-row md:gap-3 lgg:gap-4 pmd:gap-6  pmd:min-w-[904px] lgg:max-w-[1100px] pxl:max-w-[1300px] md:px-2 mdd:px-9 pmd:px-0 xl:px-0 pxl:gap-6 mx-auto ">
             <Sidebar />
         
 
@@ -63,7 +63,7 @@ const page = () => {
                 </div>
 
                 {/* solanabox */}
-                <section className="flex flex-col gap-[6px] rounded-[12px] px-[2px] bg-[#ebebeb] border-[#ebebeb]  md:w-[320px] lgg:w-[444px] pxl:w-[604px]">
+                <section className="flex flex-col gap-[6px] rounded-[12px] p-[2px] bg-[#ebebeb] border-[#ebebeb]  md:w-[320px] lgg:w-[444px] pxl:w-[604px]">
                     {/* $$ */}
                     <div className="flex flex-col p-[10px] gap-4 rounded-[12px] bg-white   pxl:w-[600px]">
                         {/* solana */}
