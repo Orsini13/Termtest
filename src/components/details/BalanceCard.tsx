@@ -22,7 +22,7 @@ const BalanceCard = () => {
                   <div className='gap-[4px] flex flex-col'>
                       <div className="flex flex-row justify-between">
                           <h1 className={` ${instrumentSerif.className} font-normal text-[36px] md:leading-1 tracking-[0] text-center text-black`}>$200.02</h1>
-                          <div className='flex flex-row [32px]'>
+                          <div className='flex flex-row'>
                               <button title='change coin' onClick={changeCurr}><Image src="/ArrowDown.svg" alt='prev' width={18} height={18} /></button>
                               <Image src="/Solana.svg" alt='prev' width={32} height={32} />
                           </div>

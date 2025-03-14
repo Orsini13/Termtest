@@ -9,7 +9,7 @@ import SlippageSettings from "@/components/details/SlippageSettings";
 const geologica = Geologica({ weight: ["300", "400", "500", "600"], subsets: ["latin"] });
 
 const page = () => {
-
+  
     return (
         <div className="items-center relative justify-center p-4 ssm:px-8 sm:px-16  md:px-4 mdd:px-8 mddd:px-16 lgg:px-24 ">
             <div className="flex flex-col gap-[24px] mx-auto md:max-w-[730px] mdd:max-w-[750px] lg:max-w-[852px] xl:max-w-[920px] 2xl:max-w-[980px]">
