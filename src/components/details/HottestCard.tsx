@@ -13,7 +13,7 @@ const HottestCard = () => {
     ];
 
     return (
-        <div className="overflow-hidden flex flex-col gap-[6px] w-full md:min-w-[298px] md:max-w-[362px] xl:w-[412px] pmd:h-[238px] ">
+        <div className="overflow-hidden flex flex-col gap-[6px] md:min-w-[298px]  pmd:w-[362px] xl:w-[412px] md:h-[238px] ">
 
             <div className='flex flex-row'>
                 <h1 className={`font-normal text-[15px] leading-[15px] tracking-[0%] text-center ${instrumentSerif.className}`}>Hottest Daily</h1>
