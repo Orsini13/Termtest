@@ -17,9 +17,9 @@ const BalanceCard = () => {
   return (
       
 
-      <div className='flex flex-col gap-[12px] md:w-full pmd:w-[362px] xl:w-[412px] md:justify-between pmd:h-[238px] '>
+      <div className='flex flex-col gap-[12px] md:w-[302px] pmd:w-[362px] xl:w-[412px]  md:justify-between md:h-[238px] '>
            {/* <div className='flex flex-col gap-[12px] md:w-full lgg:h-[400px] md:justify-between pmd:h-[238px] '> */}
-          <div className="flex flex-col bg-[#ebebeb] p-3 md:p-6 gap-[36px] sm:gap-16 pmd:gap-0 pmd:justify-between pmd:h-[178px] rounded-[24px]">
+          <div className="flex flex-col bg-[#ebebeb] p-3 md:p-6 gap-[36px] sm:gap-16  md:gap-0 md:justify-between md:h-[178px] rounded-[24px]">
                   <div className='gap-[4px] flex flex-col'>
                       <div className="flex flex-row justify-between">
                           <h1 className={` ${instrumentSerif.className} font-normal text-[36px] md:leading-1 tracking-[0] text-center text-black`}>$200.02</h1>
