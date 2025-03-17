@@ -138,7 +138,7 @@ const page = () => {
 
                 </section>
             </div>
-            {/* <DownNav /> */}
+            // {/* <DownNav /> */}
 
             {
                 isSlip ? <DownSlippage /> : null

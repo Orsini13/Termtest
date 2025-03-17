@@ -43,14 +43,14 @@ const BalanceCard = () => {
 
           <div className="flex flex-row justify-between md:gap-3 ">
                   <Link href='/add'>
-                      <button title='Add' className="items-center justify-center flex flex-row py-[12px] px-10 sm:px-20 md:px-5 gap-2 md:gap-[10px] bg-[#ebebeb] rounded-xl flex-1">
+                      <button title='Add' className="items-center justify-center flex flex-row py-[12px] px-10 sm:px-20 md:px-5 pmd:px-7 gap-2 md:gap-[10px] bg-[#ebebeb] rounded-xl flex-1">
                           <Image src="/Add.svg" alt='Add' width={24} height={24} />
                           <h1 className={`${geologica.className} my-auto font-normal text-[20px] leading-[20px] tracking-[0%] text-center text-black`}>Add</h1>
                       </button>
                   </Link>
 
                   <Link href='/withdraw'>
-                      <button title='Withdraw' className="items-center justify-center flex flex-row py-[12px] px-8 sm:px-16 md:px-4 gap-2 md:gap-[10px] bg-[#ebebeb] rounded-xl flex-1">
+                      <button title='Withdraw' className="items-center justify-center flex flex-row py-[12px] px-8 sm:px-16 md:px-4 pmd:px-6 gap-2 md:gap-[10px] bg-[#ebebeb] rounded-xl flex-1">
                           <Image src="/Withdraw.svg" alt='Withdraw' width={24} height={24} />
                           <h1 className={`${geologica.className} my-auto font-normal text-[20px] leading-[20px] tracking-[0%] text-center text-black`}>Withdraw</h1>
                       </button>
