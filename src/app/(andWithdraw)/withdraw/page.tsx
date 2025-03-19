@@ -10,8 +10,8 @@ const page = () => {
     const bankOptions = [
         { name: "Access Bank" }, { name: "First Bank" }, { name: "GT Bank" }, { name: "Zenith Bank" }, { name: "UBA" }
     ]
-    const [isAccount, setIsAccount] = useState(true);
-    const [notAccount, setNotAccount] = useState(true);
+    const [isAccount, setIsAccount] = useState(false);
+    const [notAccount, setNotAccount] = useState(false);
     const [isInputActive, setIsInputActive] = useState(false);
     const [response, setResponse] = useState(false);
     const [blackResponse, redResponse] = useState(true);
