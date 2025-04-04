@@ -72,7 +72,7 @@ const RapmPartnersList = () => {
           <button
             key={button.label}
             disabled={button.isDisabled}
-            className={`flex flex-row gap-2 p-2 items-start hover:border-[2px] hover:border-solid hover:border-blue-400 rounded-xl bg-white ${button.isDisabled ? "cursor-not-allowed opacity-40" : ""}`}
+            className={`flex flex-row gap-2 p-2 items-start hover:border-[2px] hover:border-solid hover:border-blue-500 rounded-xl bg-white ${button.isDisabled ? "cursor-not-allowed opacity-40" : ""}`}
             onClick={() => handleClick(button.url)}
           >
             <Image src={button.img} alt={button.label} width={40} height={30} className="rounded-full" />
